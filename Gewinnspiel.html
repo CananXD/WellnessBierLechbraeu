@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homeseite</title>
+<link href="designisotonic.css" rel="stylesheet">
+</head>
+<body>
+<div id="Hintergrundbox">
+<div id="Transparentbox">
+
+    <header>
+<p6>Lechbräu</p6>
+ 
+<p>Neue Produkte/Gewinnspiel</p>
+    
+    </header>
+    
+    
+  
+
+   
+        <table style="table-layout: fixed; width: 100%; height:20%;" border="0">
+    <tbody>
+        <tr>
+              <td></td>
+       <td>    <Titel><h1>Gewinnspiel</h1></Titel></td>
+               <td> <a href="index.html"><img src="Images/HomeT.png" width="60px" height="60px"></a></td>
+        
+     
+          
+        </tr>
+      
+        
+    </tbody>
+        
+    </table>
+   
+      
+
+<div id="Table1" >
+    <table>
+
+    
+<tbody>  
+    <tr>
+     
+        
+   <div id="Bild"><td><img src="Images/WinnerBottleT.png" width="300px" height="450px"></td></div> 
+        
+        <td><p2>Schon von unserem Gewinnspielt gehört?</p2><br><br><p1>Im Deckel unserer alkoholfreien Wellnes-Bier-Produkte findest du einen ganz speziellen Zahlencode z.B. 198#53D9 </p1>
+        <br>
+        <p1>Gebe deinen Code unten in das Text-Feld ein. </p1>
+            <p1>Und Wer Weiß...Vielleicht hast du ja Glück und gewinnst einen tollen Preis</p1></td></tr>
+    
+</tbody>
+  
+</table>
+    
+     <h2>Gib hier bitte deinen Zahlen-Code ein:</h2>
+    <input type="text" id="codeInput" placeholder="Code eingeben">
+    <button onclick="checkCode()">Auswerten</button>
+
+    <p id="message"></p>
+
+    <script>
+        // Funktion, die überprüft, ob der eingegebene Code korrekt ist
+        function checkCode() {
+            var eingegebenerCode = document.getElementById("codeInput").value;
+            var richtigerCode = "1234T#56"; // Der richtige Code
+
+            if (eingegebenerCode === richtigerCode) {
+                document.getElementById("message").innerHTML = "Sie haben gewonnen!";
+            } else {
+                document.getElementById("message").innerHTML = "Leider haben Sie nicht gewonnen. Versuchen Sie es nochmal!";
+            }
+        }
+    </script>
+
+       
+<div id="NAV">  
+ 
+        <table style="table-layout: fixed; width: 100%; height:20%;" border="0">
+      <tbody>
+          
+      
+    <tr>
+    <td><a href="QuizIsotonic.html"><img src="Images/IsotonicT.png" width="100px" height=130px></a></td>
+      <td><a href="AloaVera.html"><img src="Images/AloaVeraT.png" width="100px" height=130px></a></td>
+      <td><a href="Kr%C3%A4uter.html"><img src="Images/herbT.png" width="100px" height=130px></a></td>
+      <td><a href="Erdbeer.html"><img src="Images/StrawberryT.png" width=100% height=130px></a></td>
+      <td><a href="Himbeer.html"><img src="Images/RasperryT.png" width="100px" height=130px></a></td>
+         <td><a href="Rhabarber.html"><img src="Images/RhababrberT.png" width="100px" height=130px></a></td>  
+     <td><a href="Gewinnspiel.html"><img src="Images/WinnerBottleT.png" width="100px" height=130px></a></td> 
+   
+    </tr>
+	    <tr>
+      <td>ISOTONIC-BIER</td>
+      <td>ALOEVERA-BIER</td>
+      <td>KRÄUTER-BIER</td>
+      <td>ERDEBEER-BIER</td>
+    <td>HIMBEER-BIER</td>
+            <td>RHABARBER-BIER</td>
+      <td>GEWINNSPIEL</td>
+    </tr>
+
+            
+</tbody>
+</table>
+
+
+
+    </div>
+   
+</div><!--Tabelle1-->
+            
+</div><!--Transbox-->
+    
+ </div><!--Hintergrund-->
+    
+  
+</body>
+</html>
+
