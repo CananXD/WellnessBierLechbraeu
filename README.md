@@ -1,0 +1,2 @@
+# WellnessBierLechbraeu
+Studium Projekt Unternehmenskommunikation
